@@ -1,5 +1,4 @@
 function highlight(table) {
-  console.log(table);
   const teachersRows = Array.from(table.rows);
   
   for (let i = 1; i < teachersRows.length; i++) {
