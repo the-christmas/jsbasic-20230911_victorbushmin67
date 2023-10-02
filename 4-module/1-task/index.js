@@ -5,15 +5,13 @@ function makeFriendsList(friends) {
        <li></li>
        <li></li>
   `;
-
-  document.body.append(list);
   
   for (let i = 0; i < friends.length; i++) {
     let friend = friends[i].firstName + ' ' + friends[i].lastName;
     
-    const listItem = document.getElementsByTagName('li')[i];
+    const listItem = list.getElementsByTagName('li')[i];
     listItem.innerHTML = friend;
   }
   
-  return document.querySelector('ul');
+  return list;
 }
