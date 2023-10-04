@@ -2,7 +2,6 @@ function initCarousel() {
   let carouselArrowRight = document.querySelector('.carousel__arrow_right');
   let carouselArrowLeft = document.querySelector('.carousel__arrow_left');
   let slide = document.querySelector('.carousel__inner');
-  let showWindow = document.querySelector('.carousel');
   let counter = 1;
 
   carouselArrowLeft.style.display = 'none';
@@ -10,7 +9,7 @@ function initCarousel() {
   function moveToRight(slide) {
     carouselArrowLeft.style.display = 'flex';
 
-    slide.style.transform = `translateX(-${showWindow.offsetWidth * counter}px)`;
+    slide.style.transform = `translateX(-${slide.offsetWidth * counter}px)`;
 
     counter++;
 
@@ -26,7 +25,7 @@ function initCarousel() {
 
     counter--;
 
-    slide.style.transform = `translateX(-${showWindow.offsetWidth * (counter - 1)}px)`;
+    slide.style.transform = `translateX(-${slide.offsetWidth * (counter - 1)}px)`;
 
     if (counter == 1) {
       carouselArrowLeft.style.display = 'none';
