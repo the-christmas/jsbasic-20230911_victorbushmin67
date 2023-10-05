@@ -1,4 +1,5 @@
 function initCarousel() {
+  // Variables
   let carouselArrowRight = document.querySelector('.carousel__arrow_right');
   let carouselArrowLeft = document.querySelector('.carousel__arrow_left');
   let slide = document.querySelector('.carousel__inner');
