@@ -24,10 +24,6 @@ export default class ProductCard {
   }
 
   #addToCart = () => {
-    // this.elem.addEventListener('product-add', function(event) {
-    //   console.log(event);
-    // });
-
     this.elem.dispatchEvent(new CustomEvent('product-add', {
       detail: this.#id,
       bubbles: true
